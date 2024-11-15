@@ -3,6 +3,9 @@ from docx.oxml.shared import qn
 from docx.oxml import OxmlElement
 from datetime import datetime
 import random
+import re
+import numpy as np
+import new
 
 def comment(doc_path):
     doc = Document(doc_path)
@@ -88,40 +91,56 @@ def add_comment_to_document(doc_path, comment_text, author="Anonymous"):
 
 def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
     doc = Document(doc_path)
-    
-    for paragraph in doc.paragraphs:
-        if phrase in paragraph.text:
-            start_index = paragraph.text.index(phrase)
-            end_index = start_index + len(phrase)
-            
-            # Generar un ID único para el comentario
+    xml = doc.element.xml
+    paragraphs = new.split_xml_by_elements(xml)
+    txt_with_tags, tags_list = new.replace_tags(paragraphs, '<#>')
+    txt = new.build_txt(paragraphs)
+    print("Phrase: ", phrase)
+    print("Txt with tags: ", txt_with_tags)
+    comment_count = 0
+    # Crear una lista de párrafos del documento
+    doc_paragraphs = list(doc.paragraphs)
+    for i, paragraph_text in enumerate(txt_with_tags):
+        # Buscar todas las ocurrencias de la frase en el párrafo
+        start = 0
+        while True:
+            loc = new.localize_substring_ignoring_separator(paragraph_text[start:], phrase)
+            if not loc:
+                break
+            start_index, end_index = loc
+            start_index += start  # Ajustar el índice de inicio para la posición real en el párrafo
+            end_index += start
+            print(f"Found phrase in paragraph {i} at positions: {start_index}, {end_index}")
+            # Generate a unique ID for the comment
             comment_id = str(random.randint(0, 9999))
-            
-            # Crear el elemento de inicio del rango del comentario
+            # Create comment range start element
             comment_range_start = OxmlElement('w:commentRangeStart')
             comment_range_start.set(qn('w:id'), comment_id)
-            
-            # Crear el elemento de fin del rango del comentario
+            # Create comment range end element
             comment_range_end = OxmlElement('w:commentRangeEnd')
             comment_range_end.set(qn('w:id'), comment_id)
-            
-            # Crear el elemento de referencia del comentario
+            # Create comment reference element
             comment_reference = OxmlElement('w:commentReference')
             comment_reference.set(qn('w:id'), comment_id)
-            
-            # Insertar los elementos en el párrafo
-            paragraph._p.insert(start_index, comment_range_start)
-            paragraph._p.insert(end_index + 1, comment_range_end)
-            paragraph._p.insert(end_index + 2, comment_reference)
-            
-            # Crear el comentario
+            # Obtener el párrafo correcto del documento
+            p = doc_paragraphs[i]._p
+            # Insert elements into the paragraph
+            p.insert(start_index, comment_range_start)
+            p.insert(end_index + 1, comment_range_end)
+            # Insertar el comentario al final del párrafo actual
+            last_run = p.xpath('.//w:r')
+            if last_run:
+                last_run[-1].addnext(comment_reference)
+            else:
+                # Si no hay runs, añadir el comentario directamente al párrafo
+                p.append(comment_reference)
+            # Create the comment
             comment = OxmlElement('w:comment')
             comment.set(qn('w:id'), comment_id)
             comment.set(qn('w:author'), author)
             comment.set(qn('w:date'), datetime.now().isoformat())
             comment.set(qn('w:initials'), ''.join([name[0].upper() for name in author.split() if name]))
-            
-            # Añadir el texto del comentario
+            # Add comment text
             p = OxmlElement('w:p')
             r = OxmlElement('w:r')
             t = OxmlElement('w:t')
@@ -129,41 +148,25 @@ def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
             r.append(t)
             p.append(r)
             comment.append(p)
-            
-            # Añadir el comentario al documento
+            # Add comment to the document
             comments_part = doc.part.comments_part
             if comments_part is None:
                 comments_part = doc.part.add_comments_part()
             comments_part._element.append(comment)
-            
-            break
-    
+            comment_count += 1
+            print(f"Comment added to phrase in paragraph {i}")
+            # Mover el inicio para la próxima búsqueda
+            start = end_index + 1
     doc.save(doc_path)
-
-def create_comment(parent, comment_text, author, date):
-    comment = OxmlElement('w:comment')
-    comment.set(qn('w:id'), str(len(parent.xpath('//w:comment')) + 1))
-    comment.set(qn('w:author'), author)
-    comment.set(qn('w:date'), date.strftime("%Y-%m-%dT%H:%M:%SZ"))
-    comment.set(qn('w:initials'), author[0])
-
-    p = OxmlElement('w:p')
-    r = OxmlElement('w:r')
-    t = OxmlElement('w:t')
-    t.text = comment_text
-    r.append(t)
-    p.append(r)
-    comment.append(p)
-
-    return comment
+    print(f"Document saved with {comment_count} comments")
 
 # Ejemplo de uso
-doc_path = r"C:\Users\luisg\OneDrive\Escritorio\Trabajo\Add comments\add_comments_python\Script_TestFile-copy.docx"
+doc_path = r"C:\Users\luisg\OneDrive\Escritorio\Trabajo\Add comments\add_comments_python\BQER-AAP-2024.docx"
 
 # Añadir un comentario al documento
 #add_comment_to_document(doc_path, "Este es un comentario general del documento", "Usuario1")
 
 # Añadir un comentario a una frase específica
-add_comment_to_phrase(doc_path, "download", "Comentario sobre esta frase específica", "Usuario2")
+add_comment_to_phrase(doc_path, "préprofessionnelles", "Caso de error en la traducción","Luis")
 
 data = comment(doc_path)
