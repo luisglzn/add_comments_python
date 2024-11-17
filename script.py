@@ -3,9 +3,13 @@ from docx.oxml.shared import qn
 from docx.oxml import OxmlElement
 from datetime import datetime
 import random
-import re
+import os
 import numpy as np
 import new
+import xml.etree.ElementTree as ET
+import uuid
+import zipfile
+import io
 
 def comment(doc_path):
     doc = Document(doc_path)
@@ -92,9 +96,14 @@ def add_comment_to_document(doc_path, comment_text, author="Anonymous"):
 def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
     doc = Document(doc_path)
     xml = doc.element.xml
+    print("XML: ", xml)
     paragraphs = new.split_xml_by_elements(xml)
+    print("Paragraphs: ", paragraphs)
     txt_with_tags, tags_list = new.replace_tags(paragraphs, '<#>')
+    print("Txt with tags: ", txt_with_tags)
+    print("Tags list: ", tags_list)
     txt = new.build_txt(paragraphs)
+    print("Txt: ", txt)
     print("Phrase: ", phrase)
     print("Txt with tags: ", txt_with_tags)
     comment_count = 0
@@ -115,7 +124,7 @@ def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
             start_index, end_index = loc
             start_index += start
             end_index += start
-            print(f"Found phrase in paragraph {real_paragraph_index} at positions: {start_index}, {end_index}")
+            
             
             comment_id = str(random.randint(0, 9999))
             comment_range_start = OxmlElement('w:commentRangeStart')
@@ -127,6 +136,7 @@ def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
             
             # Obtener el párrafo real del documento
             p = doc.paragraphs[real_paragraph_index]._p
+            print("P: ", p)
             
             # Insertar elementos al final del párrafo
             p.append(comment_range_start)
@@ -153,7 +163,6 @@ def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
             comments_part._element.append(comment)
             
             comment_count += 1
-            print(f"Comment added to phrase in paragraph {real_paragraph_index}")
             start = end_index + 1
         
         # Incrementar el contador de párrafos reales
