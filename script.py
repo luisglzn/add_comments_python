@@ -2,81 +2,92 @@ from docx import Document
 from docx.oxml.shared import qn
 from docx.oxml import OxmlElement
 from datetime import datetime
-import random
-import os
-import numpy as np
-import new
-import xml.etree.ElementTree as ET
-import uuid
-import zipfile
-import io
+import re
+from lxml import etree
 
-def comment(doc_path):
+def split_xml_by_elements(xml):
+    root = etree.fromstring(xml)
+    paragraphs = root.findall('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p')
+    return [etree.tostring(p, encoding='unicode') for p in paragraphs]
+
+def build_txt(paragraphs):
+    return [re.sub('<.*?>', '', p) for p in paragraphs]
+
+def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
     doc = Document(doc_path)
-    comments_dict = {}
-    comments_of_dict = {}
-    author_dict = {}
-    date_dict = {}
+    xml = doc.element.xml
+    paragraphs = split_xml_by_elements(xml)
+    txt = build_txt(paragraphs)
+    
+    comment_count = 0
+    phrase_regex = re.compile(re.escape(phrase), re.IGNORECASE)
+    
+    # Obtener el último ID de comentario utilizado
+    last_comment_id = get_last_comment_id(doc)
+    
+    for i, paragraph in enumerate(paragraphs):
+        paragraph_text = txt[i]
+        if phrase_regex.search(paragraph_text):
+            modified_paragraph, comment = add_comment_to_paragraph_end(
+                paragraph, comment_text, author, last_comment_id + comment_count + 1
+            )
+            # Modificar directamente el XML del párrafo
+            update_paragraph_xml(doc, i, modified_paragraph)
+            add_comment_to_document(doc, comment)
+            comment_count += 1
+    
+    # Guardar el documento en el archivo original
+    doc.save(doc_path)
+    print(f"Documento modificado con {comment_count} comentarios")
 
-    # Obtener la parte de comentarios
+def get_last_comment_id(doc):
     comments_part = doc.part.comments_part
     if comments_part is None:
-        return []  # No hay comentarios en el documento
+        return 0
+    comments = comments_part._element.findall('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}comment')
+    if not comments:
+        return 0
+    last_comment = comments[-1]
+    return int(last_comment.get(qn('w:id')))
 
-    # Iterar sobre los comentarios
-    for comment in comments_part.element.findall(qn('w:comment')):
-        comment_id = comment.get(qn('w:id'))
-        # Obtener el texto del comentario
-        comment_text = ''
-        for paragraph in comment.findall(qn('w:p')):
-            for run in paragraph.findall(qn('w:r')):
-                for text_node in run.findall(qn('w:t')):
-                    if text_node.text:
-                        comment_text += text_node.text
-        comments_dict[comment_id] = comment_text
-        author_dict[comment_id] = comment.get(qn('w:author'))
-        date_dict[comment_id] = comment.get(qn('w:date'))
-
-    # Iterar sobre el contenido del documento para encontrar el texto comentado
-    for paragraph in doc.paragraphs:
-        for run in paragraph.runs:
-            comment_reference = run._element.find(qn('w:commentReference'))
-            if comment_reference is not None:
-                comment_id = comment_reference.get(qn('w:id'))
-                comments_of_dict[comment_id] = paragraph.text
-
-    data = []
-    for k in set(comments_dict.keys()) & set(comments_of_dict.keys()) & set(author_dict.keys()) & set(date_dict.keys()):
-        data.append({
-            "comment": comments_dict[k],
-            "text_selected": comments_of_dict[k],
-            "commented_on": date_dict[k],
-            "author": author_dict[k]
-        })
-
-    return data
-
-def add_comment_to_document(doc_path, comment_text, author="Anonymous"):
-    doc = Document(doc_path)
-    paragraph = doc.paragraphs[0]
-    run = paragraph.add_run()
+def add_comment_to_paragraph_end(paragraph, comment_text, author, comment_id):
+    root = etree.fromstring(paragraph)
     
-    # Generar un ID único para el comentario
-    comment_id = str(random.randint(0, 9999))
+    comment_range_start = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeStart')
+    comment_range_start.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
     
-    # Crear el elemento de referencia del comentario
-    comment_reference = OxmlElement('w:commentReference')
-    comment_reference.set(qn('w:id'), comment_id)
-    run._element.append(comment_reference)
+    comment_range_end = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeEnd')
+    comment_range_end.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
     
-    # Crear el comentario
+    comment_reference = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentReference')
+    comment_reference.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
+    
+    # Insertar los elementos de comentario al final del párrafo
+    root.append(comment_range_start)
+    root.append(comment_range_end)
+    root.append(comment_reference)
+    
+    comment = create_comment(str(comment_id), author, comment_text)
+    
+    return etree.tostring(root, encoding='unicode'), comment
+
+def update_paragraph_xml(doc, index, modified_paragraph):
+    # Actualizar el XML del párrafo en el documento
+    body = doc.element.body
+    paragraph_elements = body.findall('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p')
+    if index < len(paragraph_elements):
+        paragraph_elements[index].clear()
+        new_paragraph_element = etree.fromstring(modified_paragraph)
+        for child in new_paragraph_element:
+            paragraph_elements[index].append(child)
+
+def create_comment(comment_id, author, comment_text):
     comment = OxmlElement('w:comment')
     comment.set(qn('w:id'), comment_id)
     comment.set(qn('w:author'), author)
     comment.set(qn('w:date'), datetime.now().isoformat())
     comment.set(qn('w:initials'), ''.join([name[0].upper() for name in author.split() if name]))
     
-    # Añadir el texto del comentario
     p = OxmlElement('w:p')
     r = OxmlElement('w:r')
     t = OxmlElement('w:t')
@@ -85,99 +96,18 @@ def add_comment_to_document(doc_path, comment_text, author="Anonymous"):
     p.append(r)
     comment.append(p)
     
-    # Añadir el comentario al documento
+    return comment
+
+def add_comment_to_document(doc, comment):
     comments_part = doc.part.comments_part
     if comments_part is None:
         comments_part = doc.part.add_comments_part()
     comments_part._element.append(comment)
-    
-    doc.save(doc_path)
-
-def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
-    doc = Document(doc_path)
-    xml = doc.element.xml
-    print("XML: ", xml)
-    paragraphs = new.split_xml_by_elements(xml)
-    print("Paragraphs: ", paragraphs)
-    txt_with_tags, tags_list = new.replace_tags(paragraphs, '<#>')
-    print("Txt with tags: ", txt_with_tags)
-    print("Tags list: ", tags_list)
-    txt = new.build_txt(paragraphs)
-    print("Txt: ", txt)
-    print("Phrase: ", phrase)
-    print("Txt with tags: ", txt_with_tags)
-    comment_count = 0
-    
-    # Contador para rastrear la posición real en el documento
-    real_paragraph_index = 0
-    
-    for i, paragraph_text in enumerate(txt_with_tags):
-        # Ignorar párrafos vacíos o que solo contienen espacios en blanco
-        if not paragraph_text.strip():
-            continue
-        
-        start = 0
-        while True:
-            loc = new.localize_substring_ignoring_separator(paragraph_text[start:], phrase)
-            if not loc:
-                break
-            start_index, end_index = loc
-            start_index += start
-            end_index += start
-            
-            
-            comment_id = str(random.randint(0, 9999))
-            comment_range_start = OxmlElement('w:commentRangeStart')
-            comment_range_start.set(qn('w:id'), comment_id)
-            comment_range_end = OxmlElement('w:commentRangeEnd')
-            comment_range_end.set(qn('w:id'), comment_id)
-            comment_reference = OxmlElement('w:commentReference')
-            comment_reference.set(qn('w:id'), comment_id)
-            
-            # Obtener el párrafo real del documento
-            p = doc.paragraphs[real_paragraph_index]._p
-            print("P: ", p)
-            
-            # Insertar elementos al final del párrafo
-            p.append(comment_range_start)
-            p.append(comment_range_end)
-            p.append(comment_reference)
-            
-            comment = OxmlElement('w:comment')
-            comment.set(qn('w:id'), comment_id)
-            comment.set(qn('w:author'), author)
-            comment.set(qn('w:date'), datetime.now().isoformat())
-            comment.set(qn('w:initials'), ''.join([name[0].upper() for name in author.split() if name]))
-            
-            p_comment = OxmlElement('w:p')
-            r = OxmlElement('w:r')
-            t = OxmlElement('w:t')
-            t.text = comment_text
-            r.append(t)
-            p_comment.append(r)
-            comment.append(p_comment)
-            
-            comments_part = doc.part.comments_part
-            if comments_part is None:
-                comments_part = doc.part.add_comments_part()
-            comments_part._element.append(comment)
-            
-            comment_count += 1
-            start = end_index + 1
-        
-        # Incrementar el contador de párrafos reales
-        real_paragraph_index += 1
-
-    doc.save(doc_path)
-    print(f"Document saved with {comment_count} comments")
 
 # Ejemplo de uso
-doc_path = r"C:\Users\luisg\OneDrive\Escritorio\Trabajo\Add comments\add_comments_python\Script_TestFile - copia.docx"
-
-# Añadir un comentario al documento
-#add_comment_to_document(doc_path, "Este es un comentario general del documento", "Usuario1")
-
-# Añadir un comentario a una frase específica
-add_comment_to_phrase(doc_path, "física", "Caso de error en la traducción","Luis")
-
-data = comment(doc_path)
+if __name__ == "__main__":
+    doc_path = r"C:\Users\luisg\OneDrive\Escritorio\Trabajo\Add comments\add_comments_python\translated - copia.docx"
+    phrase = "CLDN18"
+    comment_text = "Prueba de comentario, se ha probado CLDN18"
+    author = "Luis"
+    add_comment_to_phrase(doc_path, phrase, comment_text, author)
