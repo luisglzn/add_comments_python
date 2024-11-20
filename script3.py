@@ -2,7 +2,6 @@ from docx import Document
 from docx.oxml.shared import qn
 from docx.oxml import OxmlElement
 from datetime import datetime
-from docx.enum.text import WD_COLOR_INDEX
 import re
 from lxml import etree
 
@@ -21,7 +20,7 @@ def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
     txt = build_txt(paragraphs)
     
     comment_count = 0
-    phrase_regex = re.compile(r'(^|\s)' + re.escape(phrase) + r'(?=\s|$|\.|,)', re.IGNORECASE)
+    phrase_regex = re.compile(re.escape(phrase), re.IGNORECASE)
     
     # Obtener el último ID de comentario utilizado
     last_comment_id = get_last_comment_id(doc)
@@ -54,74 +53,57 @@ def get_last_comment_id(doc):
 def add_comment_to_paragraph_end(paragraph, comment_text, author, comment_id):
     root = etree.fromstring(paragraph)
     first_occurrence = True
-    
+
+    # Buscar el texto dentro del párrafo
     for elem in root.iter():
         if elem.tag.endswith('t') and elem.text and phrase in elem.text:
-            # Usar una expresión regular para encontrar las posiciones de la frase
-            pattern = re.escape(phrase)
-            matches = list(re.finditer(pattern, elem.text))
-            
-            # Si no hay coincidencias, continuar
-            if not matches:
-                continue
-            
-            # Crear una lista para almacenar los nuevos elementos
-            new_elements = []
-            last_end = 0
-            
-            for match in matches:
-                start, end = match.span()
-                
-                # Añadir texto antes de la coincidencia
-                if last_end < start:
-                    before_text = elem.text[last_end:start]
-                    if before_text:
-                        before_run = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
-                        before_text_elem = etree.SubElement(before_run, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
-                        before_text_elem.text = before_text
-                        new_elements.append(before_run)
-                
-                # Añadir la frase exacta
-                phrase_run = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
-                phrase_text = etree.SubElement(phrase_run, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
-                phrase_text.text = elem.text[start:end]
-                
-                # Añadir comentario solo en la primera ocurrencia
-                if first_occurrence:
-                    comment_range_start = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeStart')
-                    comment_range_start.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
-                    new_elements.append(comment_range_start)
+            # Dividir el texto en partes: antes, el texto encontrado, y después
+            parts = elem.text.split(phrase, 1)
+            before_text = parts[0]
+            after_text = parts[1] if len(parts) > 1 else ""
 
-                    new_elements.append(phrase_run)
+            # Ajustar el texto del nodo actual con la parte antes del texto encontrado
+            elem.text = before_text
 
-                    comment_range_end = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeEnd')
-                    comment_range_end.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
-                    new_elements.append(comment_range_end)
+            # Crear un nuevo elemento para el texto encontrado
+            found_text = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
+            text_elem = etree.SubElement(found_text, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
+            text_elem.text = phrase
 
-                    comment_reference = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentReference')
-                    comment_reference.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
-                    new_elements.append(comment_reference)
-                    
-                    first_occurrence = False
-                else:
-                    new_elements.append(phrase_run)
-                
-                last_end = end
-            
-            # Añadir texto después de la última coincidencia
-            if last_end < len(elem.text):
-                after_text = elem.text[last_end:]
-                if after_text:
-                    after_run = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
-                    after_text_elem = etree.SubElement(after_run, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
-                    after_text_elem.text = after_text
-                    new_elements.append(after_run)
-            
-            # Reemplazar el elemento original con los nuevos elementos
-            elem.clear()
-            for new_elem in new_elements:
-                elem.addnext(new_elem)
-                elem = new_elem
+            elem.addnext(found_text)
+
+            # Añadir el espacio inmediatamente al nodo del texto encontrado
+            if after_text and after_text.startswith(" "):
+                after_text = after_text[1:] # Eliminar el espacio del texto restante
+
+            # Crear un nuevo elemento para el texto restante (si hay)
+            if after_text:
+                after_text_elem = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
+                after_text_t = etree.SubElement(after_text_elem, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
+                after_text_t.text = u'\u00A0' + after_text  # Añadir un espacio de no separación antes del texto restante
+                found_text.addnext(after_text_elem)
+
+                # Ajustar el espaciado de caracteres
+                rPr = etree.SubElement(after_text_elem, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr')
+                spacing = etree.SubElement(rPr, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}spacing')
+                spacing.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '0')
+
+            # Insertar los elementos de comentario alrededor del texto encontrado si es la primera ocurrencia
+            if first_occurrence:
+                comment_range_start = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeStart')
+                comment_range_start.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
+                found_text.addprevious(comment_range_start)
+
+                comment_range_end = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeEnd')
+                comment_range_end.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
+                found_text.addnext(comment_range_end)
+
+                comment_reference = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentReference')
+                comment_reference.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', str(comment_id))
+                comment_range_end.addnext(comment_reference)
+
+                first_occurrence = False
+            break # Salir del bucle después de añadir el comentario
 
     comment = create_comment(str(comment_id), author, comment_text)
     return etree.tostring(root, encoding='unicode'), comment
@@ -159,30 +141,65 @@ def add_comment_to_document(doc, comment):
         comments_part = doc.part.add_comments_part()
     comments_part._element.append(comment)
 
-def highlight_repeated_phrases(doc_path, phrase):
+def highlight_phrase_in_document(doc_path, phrase):
     doc = Document(doc_path)
-    phrase_regex = re.compile(rf'\b{re.escape(phrase)}\b', re.IGNORECASE)
-    
     for paragraph in doc.paragraphs:
-        if phrase_regex.search(paragraph.text):
-            first_occurrence = True
-            for run in paragraph.runs:
-                if phrase_regex.search(run.text):
-                    if not first_occurrence:
-                        # Resaltar las ocurrencias adicionales
-                        run.font.highlight_color = WD_COLOR_INDEX.YELLOW
-                    else:
-                        first_occurrence = False
-
-    # Guardar el documento en el archivo original
+        highlight_phrase_in_paragraph(paragraph, phrase)
     doc.save(doc_path)
-    print("Documento modificado con resaltado en las ocurrencias adicionales")
 
+
+def highlight_phrase_in_paragraph(paragraph, phrase):
+    paragraph_xml = paragraph._element
+    for elem in paragraph_xml.iter():
+        if elem.tag.endswith('t') and elem.text and phrase in elem.text:
+            parts = elem.text.split(phrase)
+            elem.text = parts[0].rstrip()  # Eliminar espacios al final del texto anterior
+
+            for i, part in enumerate(parts[1:]):
+                # Crear el elemento before_text
+                before_text = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
+                before_text_elem = etree.SubElement(before_text, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
+                
+                if parts[i].endswith(" "):
+                    before_text_elem.text = u'\u00A0'  # Espacio no separable
+                    rPr = etree.SubElement(before_text, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr')
+                    spacing = etree.SubElement(rPr, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}spacing')
+                    spacing.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '0')
+                    elem.addnext(before_text)
+                    elem = before_text
+
+                found_text = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
+                
+                rPr = etree.SubElement(found_text, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr')
+                highlight = etree.SubElement(rPr, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}highlight')
+                highlight.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', 'yellow')
+                
+                text_elem = etree.SubElement(found_text, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
+                text_elem.text = phrase
+                
+                elem.addnext(found_text)
+
+                after_text = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
+                after_text_elem = etree.SubElement(after_text, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
+                
+                if part.startswith(" "):
+                    after_text_elem.text = u'\u00A0' + part[1:]
+                else:
+                    after_text_elem.text = part
+
+                rPr = etree.SubElement(after_text, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr')
+                spacing = etree.SubElement(rPr, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}spacing')
+                spacing.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '0')
+
+                found_text.addnext(after_text)
+                elem = after_text
+                
 # Ejemplo de uso
 if __name__ == "__main__":
     doc_path =r"C:\Users\luisg\OneDrive\Escritorio\Trabajo\Add comments\add_comments_python\translated - copia.docx"
-    phrase = "CLDN18"
-    #highlight_repeated_phrases(doc_path, phrase)
-    comment_text = "Prueba de comentario, se ha probado CLDN18"
+    phrase = "CLDN18.2"
+    comment_text = "Prueba de comentario, se ha buscado CLDN18.2"
     author = "Luis"
     add_comment_to_phrase(doc_path, phrase, comment_text, author)
+    highlight_phrase_in_document(doc_path, phrase)
+    
