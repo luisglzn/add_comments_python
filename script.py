@@ -36,9 +36,10 @@ def add_comment_to_phrase(doc_path, phrase, comment_text, author="Anonymous"):
             add_comment_to_document(doc, comment)
             comment_count += 1
     
-    # Guardar el documento en el archivo original
-    doc.save(doc_path)
-    print(f"Documento modificado con {comment_count} comentarios")
+    # Guardar el documento en un nuevo archivo
+    new_doc_path = doc_path.replace('.docx', '_suggestions.docx')
+    doc.save(new_doc_path)
+    print(f"Documento modificado con {comment_count} comentarios y guardado como {new_doc_path}")
 
 def get_last_comment_id(doc):
     comments_part = doc.part.comments_part
@@ -64,6 +65,8 @@ def add_comment_to_paragraph_end(paragraph, comment_text, author, comment_id):
 
             # Ajustar el texto del nodo actual con la parte antes del texto encontrado
             elem.text = before_text
+
+            
 
             # Crear un nuevo elemento para el texto encontrado
             found_text = etree.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
@@ -145,7 +148,8 @@ def highlight_phrase_in_document(doc_path, phrase):
     doc = Document(doc_path)
     for paragraph in doc.paragraphs:
         highlight_phrase_in_paragraph(paragraph, phrase)
-    doc.save(doc_path)
+    new_doc_path = doc_path.replace('.docx', '_suggestions.docx')
+    doc.save(new_doc_path)
 
 
 def highlight_phrase_in_paragraph(paragraph, phrase):
@@ -196,10 +200,11 @@ def highlight_phrase_in_paragraph(paragraph, phrase):
                 
 # Ejemplo de uso
 if __name__ == "__main__":
-    doc_path =r"C:\Users\luisg\OneDrive\Escritorio\Trabajo\Add comments\add_comments_python\translated - copia.docx"
-    phrase = "CLDN18.2"
-    comment_text = "Prueba de comentario, se ha buscado CLDN18.2"
+    doc_path =r"C:\Users\luisg\OneDrive\Escritorio\Trabajo\Add comments\add_comments_python\EP3567950-B1__seprotec_es.docx"
+    phrase = "PDCCH"
+    comment_text = "Prueba de comentario, se ha buscado PDCCH"
     author = "Luis"
-    add_comment_to_phrase(doc_path, phrase, comment_text, author)
     highlight_phrase_in_document(doc_path, phrase)
+    add_comment_to_phrase(doc_path, phrase, comment_text, author)
+    
     
