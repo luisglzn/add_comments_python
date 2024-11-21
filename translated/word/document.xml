@@ -1,0 +1,2722 @@
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16du wp14">
+  <w:body>
+    <w:p w14:paraId="7C8CCAC2" w14:textId="05558FA0" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">POBLACIÓN DE ESTUDIO</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="404B689E" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:pPr>
+        <w:pStyle w:val="Spaced"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">La población objetivo de interés en este estudio son los participantes con adenocarcinoma gástrico, de la unión gastroesofágica o del esófago distal, localmente avanzado o metastásico, confirmado histológicamente, irresecable, que expresa CLDN18.2 y que ha progresado después de uno o más regímenes previos, incluidos una fluoropirimidina y un agente de platino.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="27F93DDB" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:pPr>
+        <w:pStyle w:val="Spaced"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">No se permite la aprobación prospectiva de desviaciones del protocolo a los criterios de reclutamiento e inscripción, también conocidas como exenciones o exenciones del protocolo.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1FC6C6D6" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:pPr>
+        <w:pStyle w:val="Spaced"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Cada participante debe cumplir todos los criterios de inclusión y ninguno de los criterios de exclusión de este estudio para poder ser asignado al estudio.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="27C6D623" w14:textId="2F295D86" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:pPr>
+        <w:pStyle w:val="Spaced"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes que no cumplan con los requisitos de elegibilidad no pasarán la prueba; consulte la Sección </w:t>
+      </w:r>
+      <w:hyperlink w:anchor="_Screen_Failures" w:history="1">
+        <w:r w:rsidRPr="00535D49">
+          <w:rPr>
+            <w:rStyle w:val="Hyperlink"/>
+          </w:rPr>
+          <w:t xml:space="preserve">5.4</w:t>
+        </w:r>
+      </w:hyperlink>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1211C0C1" w14:textId="1124E3B1" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00C31F48">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00C31F48">
+        <w:t xml:space="preserve">Criterios de inclusión</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4E1C5CE4" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:pPr>
+        <w:pStyle w:val="Spaced"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes son elegibles para ser incluidos en el estudio solo si se cumplen todos los criterios siguientes:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="31247A2F" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00C31F48">
+      <w:pPr>
+        <w:pStyle w:val="T1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Consentimiento informado</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5F70315E" w14:textId="1E00D26F" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00C31F48">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Capaz de dar su consentimiento informado firmado antes de cualquier procedimiento, muestreo y análisis obligatorio específico del estudio, tal como se describe en el </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Apéndice A</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">, que incluye el cumplimiento de los requisitos y restricciones enumerados en el ICF y en este CSP.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="47B5D0B1" w14:textId="50DE8418" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00C31F48">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Provisión de información de investigación de la Iniciativa de genómica opcional firmada y fechada</w:t>
+      </w:r>
+      <w:r w:rsidR="00C31F48">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">y formulario de consentimiento antes de la recolección de muestras para la investigación de la Iniciativa de genómica opcional que respalde la Iniciativa genómica (ver Apéndice </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">D 2</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">). Los participantes que no den su consentimiento para la investigación de la Iniciativa de genómica opcional seguirán siendo elegibles para el estudio principal.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2513EF3E" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00C31F48" w:rsidRDefault="00000000" w:rsidP="00C31F48">
+      <w:pPr>
+        <w:pStyle w:val="T1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Edad</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5E55B673" w14:textId="264EA8FD" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00C31F48">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">El participante debe tener al menos 18 años o la edad legal de consentimiento en la jurisdicción en la que se lleva a cabo el estudio al momento de firmar el ICF.</w:t>
+      </w:r>
+      <w:r w:rsidR="00C31F48">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="194549DF" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00C31F48">
+      <w:pPr>
+        <w:pStyle w:val="T1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Tipo de participante y características de la enfermedad</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4CD89374" w14:textId="43DB6BE8" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00C31F48">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Adenocarcinoma localmente avanzado o metastásico, irresecable, confirmado histológicamente de</w:t>
+      </w:r>
+      <w:r w:rsidR="00C31F48">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">gástrico, de la unión gastroesofágica o del esófago distal (tercio distal del esófago) y el siguiente requisito:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0DD224C0" w14:textId="0502D9C1" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Participantes con expresión positiva de CLDN18.2 definida como expresión de células tumorales </w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> del 25 % </w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">con IHC a cualquier intensidad, determinada prospectivamente mediante pruebas centrales de IHC utilizando el ensayo de IHC Ventana CLDN18.2 (SP455) en investigación (ensayo prototipo y/o ensayo validado o una prueba central alternativa según sea necesario) de un tumor de archivo recolectado en los últimos 24 meses o de una biopsia reciente. Para los participantes que hayan recibido terapias dirigidas a CLDN18.2 previamente, se debe realizar una nueva biopsia al momento de la progresión para realizar pruebas para determinar la expresión de CLDN18.2. Los participantes con estado desconocido de CLDN18.2 o expresión de células tumorales CLDN18.2 &lt;25 % con IHC a cualquier intensidad según el resultado de la prueba central no son elegibles para el estudio.</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidRPr="00B9699B">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidR="00C31F48">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:lastRenderedPageBreak/>
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="51D89205" w14:textId="330654A0" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes deben someterse a una prueba local de HER2 (o haberse realizado una) mediante IHC/ISH.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0AFFBA6B" w14:textId="661B71DA" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Progresión de la enfermedad durante o después de al menos un régimen previo para enfermedad avanzada o metastásica</w:t>
+      </w:r>
+      <w:r w:rsidR="00B9699B">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">, que incluía una fluoropirimidina y un platino, para enfermedad avanzada o metastásica. NOTA:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0F9F5ACA" w14:textId="3DF6ED09" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">La progresión dentro de los 6 meses posteriores a una quimioterapia adyuvante o neoadyuvante previa se considera equivalente a la progresión con un régimen para enfermedad avanzada o metastásica.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6F6AA889" w14:textId="512125EA" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Si uno de los componentes de una terapia combinada previa se interrumpió debido a un EA y el otro continuó, esto se considera como "un régimen previo".</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="69D06F9A" w14:textId="7CC2F1BF" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Si el tratamiento previo se interrumpe debido a una mala tolerabilidad o a un efecto adverso sin progresión documentada, no se considera que se trate de un "régimen previo".</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7C564D12" w14:textId="1662FFB9" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">El cambio en la dosis o vía de administración (p. ej., fluoropirimidina intravenosa u oral) del régimen previo sin progresión se considera "un régimen previo".</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="15D79B7C" w14:textId="21CA9771" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Son elegibles los participantes que recibieron previamente un inhibidor del punto de control inmunitario o un anticuerpo monoclonal dirigido al gen CLDN18.2.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0B74A5EA" w14:textId="770FB4B5" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00B9699B" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Debe</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">tener al menos una lesión medible o evaluable evaluada por el investigador según RECIST 1.1.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="150DA886" w14:textId="733472B2" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Una lesión previamente irradiada puede considerarse una lesión diana si la lesión ha progresado después de la última radioterapia y está bien definida.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4806DE18" w14:textId="3C737DD4" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Para los participantes que se someten a biopsias durante la selección y/o el tratamiento, se prefiere, aunque no es obligatorio, que la lesión biopsiada sea distinta de cualquier lesión objetivo utilizada en la evaluación RECIST 1.1.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1FDC73F2" w14:textId="00D939E1" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Estado funcional ECOG de 0 o 1 sin deterioro durante las 2 semanas anteriores</w:t>
+      </w:r>
+      <w:r w:rsidR="00B9699B">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">al inicio o al día de la primera dosis.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6758D218" w14:textId="6CA80FFC" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Esperanza de vida prevista de </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">12 semanas.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="32926A99" w14:textId="77777777" w:rsidR="00535D49" w:rsidRDefault="00000000" w:rsidP="00B9699B">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Función adecuada de los órganos y de la médula ósea como se muestra en la </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Tabla 7</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4A04A6A2" w14:textId="36104992" w:rsidR="006F0F8A" w:rsidRPr="00535D49" w:rsidRDefault="00000000" w:rsidP="00535D49">
+      <w:pPr>
+        <w:keepNext/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:lastRenderedPageBreak/>
+        <w:t xml:space="preserve">Tabla 7</w:t>
+      </w:r>
+      <w:r w:rsidR="00B9699B" w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t xml:space="preserve">Criterios</w:t>
+      </w:r>
+      <w:r w:rsidR="00B9699B" w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00535D49">
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t xml:space="preserve">para una función adecuada de los órganos y la médula ósea</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblOverlap w:val="never"/>
+        <w:tblW w:w="9360" w:type="dxa"/>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblCellMar>
+          <w:top w:w="29" w:type="dxa"/>
+          <w:left w:w="43" w:type="dxa"/>
+          <w:bottom w:w="29" w:type="dxa"/>
+          <w:right w:w="43" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="0000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:noHBand="0" w:noVBand="0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1708"/>
+        <w:gridCol w:w="2161"/>
+        <w:gridCol w:w="5491"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="635C63FA" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3732" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="2F7978E2" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="009942CF" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="009942CF">
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Parámetro</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="621F3C62" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="009942CF" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="009942CF">
+              <w:rPr>
+                <w:b/>
+                <w:bCs/>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Valor</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="6999BC89" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="6A7448A2" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Hematológico</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="0A134E64" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Hemoglobina </w:t>
+            </w:r>
+            <w:r w:rsidRPr="009942CF">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">a</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="21B2F625" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&gt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 9,0 g/dl (5,59 mmol/l)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="2CE2FD45" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="49E2BE78" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="1AB1CE3F" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Recuento absoluto de neutrófilos</w:t>
+            </w:r>
+            <w:r w:rsidRPr="009942CF">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">a</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="324219C2" w14:textId="68AB0C82" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&gt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 1,5 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 10</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">9</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">/L (1000 por mm</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="1FE28B0E" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="1B1B1915" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="799E0C5F" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Recuento de plaquetas</w:t>
+            </w:r>
+            <w:r w:rsidRPr="009942CF">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">a</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="3F4D9F3C" w14:textId="5FF4ACF7" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&gt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 100 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 10</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">9</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">/L (100000 por mm</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="5FBD2605" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="50FD4BC9" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Hepático</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="20514499" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Bilirrubina total</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="68C16E9B" w14:textId="30E00AD1" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&lt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 1,5 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> LSN en ausencia del síndrome de Gilbert</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="623AB6DB" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="7668755D" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="206B720A" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="5502A9D8" w14:textId="43638696" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&lt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 3 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> LSN si el participante tiene síndrome de Gilbert</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="75187185" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="0185E546" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="08B96F9F" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="4CFBDB4A" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&lt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> LSN si el participante planea recibir docetaxel</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="732F42FC" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="45C7F659" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="23429810" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">ALT y AST</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="4CD06E96" w14:textId="23CF958F" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&lt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 3 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> LSN (para participantes con metástasis hepáticas, ALT y AST </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 5 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> LSN)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="14689ECE" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="7729BD39" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="174D2154" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="05046378" w14:textId="1CBCD83F" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&lt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 1,5 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> LSN y ALP &lt; 2,5 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> LSN para el plan del participante de recibir docetaxel</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="5CE38699" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="0CA0FEC2" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="006F0F8A" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="175A1B9D" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Albúmina</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="76E22648" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&gt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 2,5 g/dl</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="45A1F3C3" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="1FAF91E5" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Renales</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="2D7CD0C4" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Aclaramiento de creatinina calculado </w:t>
+            </w:r>
+            <w:r w:rsidRPr="009942CF">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">b</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="2861A920" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&gt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 30 ml/minuto según lo determinado por Cockcroft Gault (utilizando el peso corporal real)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="05DB91CA" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w14:paraId="71115016" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Coagulación</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="403A4A70" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">PT/INR/PTT</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="17467AA4" w14:textId="63B379FC" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&lt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 1,5 </w:t>
+            </w:r>
+            <w:r w:rsidR="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:sym w:font="Symbol" w:char="F0B4"/>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> LSN </w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w14:paraId="38FF4A56" w14:textId="77777777" w:rsidTr="009942CF">
+        <w:trPr>
+          <w:trHeight w:val="20"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1647" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="5374AC4D" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">Análisis de orina</w:t>
+            </w:r>
+            <w:r w:rsidRPr="009942CF">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:vertAlign w:val="superscript"/>
+              </w:rPr>
+              <w:t xml:space="preserve">c</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2085" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="3E02EF79" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve">proteína urinaria</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="5297" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+            </w:tcBorders>
+            <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+          </w:tcPr>
+          <w:p w14:paraId="11A9C535" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="00B9699B" w:rsidRDefault="00000000" w:rsidP="00535D49">
+            <w:pPr>
+              <w:keepNext/>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&lt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 1+ en la tira reactiva o en el análisis de orina de rutina. Si la tira reactiva o el análisis de orina de rutina indican proteinuria </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00535D49">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+                <w:u w:val="single"/>
+              </w:rPr>
+              <w:t xml:space="preserve">&gt;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B9699B">
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t xml:space="preserve"> 2+, se debe recolectar orina de 24 horas y debe demostrar &lt; 1000 mg de proteína en 24 horas</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="34D3950B" w14:textId="4DA78146" w:rsidR="006F0F8A" w:rsidRPr="009942CF" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a0"/>
+      </w:pPr>
+      <w:r w:rsidRPr="009942CF">
+        <w:t xml:space="preserve">Los criterios hematológicos no se pueden cumplir con transfusiones de sangre o tratamiento con eritropoyetina en curso o recientes (dentro de los 14 días anteriores a la evaluación de detección y/o aleatorización) o requieren apoyo de factor de crecimiento (dentro de los 21 días anteriores a la evaluación de detección y/o aleatorización programada).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="34098BA2" w14:textId="7EF7428F" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a0"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Según lo determinado por Cockcroft-Gault (utilizando el peso corporal real; Cockcroft y Gault, 1976) o el aclaramiento de creatinina en orina de 24 horas. Véase la </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Tabla 12</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6D3E8803" w14:textId="0DA2C7E3" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a0"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Solo aplicable para participantes que reciben ramucirumab.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="12F4C3D8" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="009942CF" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:pPr>
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="009942CF">
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t xml:space="preserve">ALT = alanina aminotransferasa; ALP = fosfatasa alcalina; AST = aspartato aminotransferasa; </w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="009942CF">
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t xml:space="preserve">CrCL</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="009942CF">
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> = aclaramiento de creatinina; INR = índice internacional normalizado; TP = tiempo de protrombina; TTP = tiempo de tromboplastina parcial; LSN = límite superior de lo normal.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5309E68C" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="T1"/>
+        <w:spacing w:before="240"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Peso</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3DDE61BA" w14:textId="626299CD" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Peso corporal de </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> 35 kg.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1757E062" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="T1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Requisitos sobre sexo y métodos anticonceptivos/de barrera</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2147D1D7" w14:textId="4E9A8C1B" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">FOCBP:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5B49EE75" w14:textId="61F743B0" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Debe tener una prueba de embarazo negativa en el momento de la selección y antes de la infusión de cada ciclo.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3E4DF80A" w14:textId="3975E8B8" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Si tiene relaciones sexuales con una pareja masculina no esterilizada, debe usar al menos un método anticonceptivo altamente eficaz según lo indicado en la evaluación y debe aceptar continuar usando dichas precauciones durante 7 meses (210 días) después de la última dosis de AZD0901 o según lo requiera la información de prescripción para la terapia que haya recibido el investigador. Se debe respetar el período de reposo farmacológico más largo.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="503162EF" w14:textId="1A496A30" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Las parejas masculinas no esterilizadas de FOCBP deben usar un condón masculino más espermicida durante todo el período especificado anteriormente para las participantes femeninas (Nota: Los condones masculinos </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:lastRenderedPageBreak/>
+        <w:t xml:space="preserve">no son confiables como único método anticonceptivo).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="11AD59B9" w14:textId="2C0EF91F" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Las participantes femeninas no deben amamantar ni donar ni extraer óvulos para su propio uso durante el período especificado anteriormente para las participantes femeninas.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4257BB17" w14:textId="7C65741C" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes masculinos no esterilizados que sean sexualmente activos y tengan una FOCBP deben usar un condón con espermicida (solo condón en países donde los espermicidas no están aprobados) desde el momento de la selección y deben aceptar continuar usando dichas precauciones durante 7 meses (210 días) después de la última dosis de AZD0901 o según lo requiera la información de prescripción para la terapia recibida elegida por el investigador. Se debe respetar el período de reposo farmacológico más largo. (Nota: Los condones masculinos no son confiables como único método anticonceptivo)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3AB133A1" w14:textId="69A9C71B" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Las parejas femeninas de un participante masculino también deben utilizar al menos un método anticonceptivo altamente eficaz durante el período especificado anteriormente para el participante masculino. Además, los participantes masculinos deben abstenerse de engendrar un hijo o donar esperma durante este período.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3B166BE6" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:ind w:left="432"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">El uso de anticonceptivos por parte de hombres o mujeres debe ser coherente con las reglamentaciones locales respecto de los métodos de anticoncepción para quienes participan en estudios clínicos; consulte el </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Apéndice G</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> para obtener más detalles.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="66362A2C" w14:textId="4D887A4D" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Criterios de exclusión</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="46FCCF19" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes quedan excluidos del estudio si se cumple alguno de los siguientes criterios:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6BA1C83F" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="T1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Condiciones médicas</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7104A09A" w14:textId="7B6DA9F7" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="12"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Participantes con estado positivo conocido de HER2, definido como IHC 3+ o IHC 2+/ISH +</w:t>
+      </w:r>
+      <w:r w:rsidR="009942CF">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">(Los casos con una relación HER2:CEP17 </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidR="00892792">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">2 o un número promedio de copias de HER2 </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> de 6,0 señales/célula se consideran positivos por ISH). Los participantes deben someterse a una prueba local de HER2 (o haberse realizado una) por IHC/ISH, y se utilizará el resultado más reciente del estado de HER2 para determinar la elegibilidad.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="59921D25" w14:textId="64DD2DA9" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">El participante tiene sangrado gástrico significativo o inestable y/o úlceras gástricas no tratadas.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="187B4F98" w14:textId="34497D87" w:rsidR="009942CF" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Trastornos autoinmunes o inflamatorios activos o previamente documentados que requirieron tratamiento sistémico o que el investigador evaluó como no apropiados para participar debido a un riesgo indebido.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5574EF2E" w14:textId="50F3150C" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:spacing w:after="120"/>
+        <w:ind w:left="432"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Las siguientes son excepciones a este criterio:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="02089048" w14:textId="44B73AE4" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="13"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Vitíligo o alopecia.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3D198DE5" w14:textId="77777777" w:rsidR="00892792" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Hipotiroidismo (p. ej., después de la enfermedad de Hashimoto) estable con reemplazo hormonal.</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1D93C218" w14:textId="0DD6ABAB" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Psoriasis o eczema que no requieren tratamiento sistémico.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6D33FEE8" w14:textId="33943643" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Metástasis o patología del sistema nervioso central, incluidas: epilepsia, convulsiones, afasia o accidente cerebrovascular en los 3 meses anteriores al consentimiento, lesión cerebral grave, demencia, enfermedad de Parkinson, enfermedades neurodegenerativas, enfermedad cerebelosa, enfermedad mental grave no controlada,</w:t>
+      </w:r>
+      <w:r w:rsidR="009942CF">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">psicosis, afectación del sistema nervioso central por enfermedades autoinmunes. Las siguientes son excepciones a este criterio:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7EC708D5" w14:textId="4ED6775B" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="14"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Se permiten participantes con antecedentes de convulsiones si no han tenido convulsiones activas en los últimos 5 años.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="34AACBA4" w14:textId="44AA22AB" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:lastRenderedPageBreak/>
+        <w:t xml:space="preserve">Participantes con metástasis cerebrales tratadas, asintomáticas, estables y que no hayan requerido esteroides durante al menos 4 semanas antes de la aleatorización. Deben haber transcurrido al menos 2 semanas entre el final de la radioterapia cerebral y la inscripción en el estudio.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6A2FB552" w14:textId="1272ED17" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">El participante tiene una enfermedad corneal clínicamente significativa conocida (por ejemplo, queratitis activa o ulceraciones corneales).</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidR="009942CF">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="54BF216E" w14:textId="7C673270" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Toxicidades persistentes (CTCAE Grado </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> 2) causadas por terapias previas contra el cáncer,</w:t>
+      </w:r>
+      <w:r w:rsidR="009942CF">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">excluida la alopecia. Se pueden incluir participantes con toxicidad irreversible que no se espera razonablemente que se agrave por la intervención del estudio (p. ej., pérdida de audición).</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4372653C" w14:textId="0A5095C9" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Neuropatía periférica, sensitiva o motora, </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> Grado 2 de CTCAE en la selección.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="16A27455" w14:textId="16AA461D" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Historial de eventos tromboembólicos en los últimos 3 meses antes de la aleatorización.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7155A9EE" w14:textId="6344EA3B" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="15"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes con tromboembolia venosa sin antecedentes de embolia pulmonar, que no requieran tratamiento o que ya hayan recibido tratamiento estable con anticoagulantes durante 14 días o más antes del inicio de la intervención del estudio, podrán ser inscritos/asignados aleatoriamente y deberán ser monitoreados de cerca.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7E65137B" w14:textId="42924F73" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">El participante tiene alguna de las siguientes anomalías cardíacas:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="06A957FD" w14:textId="7C55A42B" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="16"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Intervalo QT corregido en reposo medio (</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">QTcF</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">) &gt; 470 milisegundos, obtenido a partir de ECG triplicados realizados en el momento de la selección.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="29A13398" w14:textId="0FC8DA02" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">FEVI &lt; 50% por ECO.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="284507EA" w14:textId="4566FA3A" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Clasificación NYHA para la función cardíaca</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Clase II.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7B4D7099" w14:textId="25BFC670" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Otras enfermedades cardiovasculares y cerebrovasculares que, según la evaluación del investigador, no sean adecuadas para participar en este estudio.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="64E5A08E" w14:textId="210E3365" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Antecedentes de otra neoplasia maligna primaria, excepto una neoplasia maligna tratada con intención curativa sin enfermedad activa conocida (</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> 2 años) antes de la aleatorización y con bajo riesgo potencial de recurrencia. Las excepciones incluyen carcinoma de células basales de la piel y carcinoma de células escamosas de la piel que se haya sometido a una terapia potencialmente curativa.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="584D54E8" w14:textId="40163048" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Exclusiones de enfermedades infecciosas:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="29BF22A5" w14:textId="5F8A0F67" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="17"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Hepatitis B no controlada conocida y/o hepatitis B crónica o activa con ADN del VHB</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t xml:space="preserve">&gt;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> 100 UI/ml, consulte la </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Figura 2</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"> para conocer las pruebas de detección y el algoritmo de elegibilidad.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="24A0F008" w14:textId="668EFB5B" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="i"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes con HBsAg positivo son elegibles si el ADN del VHB es &lt; 100 UI/mL y aceptan iniciar o mantener el tratamiento antiviral.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4D251F73" w14:textId="34935368" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="i"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes con HBsAg negativo y carga viral del VHB 'detectable' son elegibles si el ADN del VHB es &lt;100 UI/mL y aceptan iniciar o mantener el tratamiento antiviral.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="24344FA1" w14:textId="1BDD8952" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="i"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Son elegibles los participantes con HBsAg negativo, anti-HBc positivo y ADN del VHB 'indetectable'.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="05DF8698" w14:textId="5DCE8943" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="i"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Son elegibles los participantes con HBsAg negativo, anti-HBc negativo y anti-HBs positivo.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6B3B240C" w14:textId="5BB422CE" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="i"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:lastRenderedPageBreak/>
+        <w:t xml:space="preserve">Los participantes con HBsAg positivo o ADN del VHB detectable deben recibir terapia profiláctica antiviral durante la duración de la terapia contra el cáncer, así como durante al menos 12 meses después de la última dosis de la terapia contra el cáncer. Los participantes deben recibir al menos 2 semanas de profilaxis antiviral antes de comenzar a tomar el fármaco del estudio. Consulte la Sección </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">8.3.5.1 </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">para obtener pautas de tratamiento adicionales.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="56E2CE5A" w14:textId="2F79BC95" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Hepatitis C crónica, activa o no controlada conocida, definida como IgM/IgG anti-VHC positiva y ARN del VHC detectable mediante reacción en cadena de la polimerasa. Los participantes con antecedentes de infección por VHC son elegibles si han sido tratados y curados con una carga viral del VHC indetectable al menos 12 semanas después del tratamiento antiviral del VHC.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="56134569" w14:textId="034D4490" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Infección activa por VIH (verificada por anticuerpos positivos contra el VIH-1 o el VIH-2).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3C5AAA81" w14:textId="6DBBAC68" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Infección sistémica activa, fúngica, bacteriana o de otro tipo, no controlada (definida como la presentación de signos/síntomas continuos relacionados con la infección y sin mejoría, a pesar de los antibióticos adecuados u otro tratamiento).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7D4BFD23" w14:textId="7A521FF4" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="a"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Infección tuberculosa activa (evaluación clínica que puede incluir historia clínica, examen físico y hallazgos radiográficos, o pruebas de tuberculosis de acuerdo con la práctica local).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="673B2598" w14:textId="2489DE2C" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Diabetes no controlada o neuropatía diabética dentro de los 3 meses previos a la aleatorización.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="631E180D" w14:textId="129E91F0" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">A juicio del investigador, cualquier evidencia de enfermedades (como enfermedades sistémicas graves o no controladas, incluidas hipertensión no controlada, trasplante renal y enfermedades hemorrágicas activas, afecciones gastrointestinales crónicas graves asociadas con náuseas, vómitos y diarrea) que, en opinión del investigador, hagan que no sea deseable que el participante participe en el estudio o que pongan en peligro el cumplimiento del protocolo.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="148D90C7" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="T1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Terapia previa/concomitante</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="15F7E4E8" w14:textId="533626E6" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Exposición previa a cualquier ADC con carga útil MMAE o cualquier tratamiento dirigido a CLDN18.2 que no sea un anticuerpo monoclonal desnudo (por ejemplo, terapia de células CAR-T dirigida a CLDN18.2, anticuerpo multiespecífico que incluya la diana CLDN18.2, </w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">etc.</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">).</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="62155E1D" w14:textId="240B7890" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Recepción de la última dosis de terapia contra el cáncer dentro de los 28 días (para quimioterapia, terapia basada en anticuerpos o inmunoterapia) o 5 vidas medias (para terapia dirigida) antes de la aleatorización. Se excluyen los productos naturales o a base de hierbas destinados al tratamiento o profilaxis de cualquier tipo de cáncer que pueda interferir con la actividad de la intervención del estudio, consulte la </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Tabla 10</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="68C86376" w14:textId="7F84889F" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Recibir cualquier tratamiento anticanceroso concurrente. Se permite el uso concurrente de terapia hormonal para afecciones no relacionadas con el cáncer (p. ej., terapia de reemplazo hormonal).</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="14B60812" w14:textId="5275E129" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Radioterapia paliativa con un campo de radiación limitado en las 2 semanas previas o con un campo de radiación amplio o en más del 30 % de la médula ósea en las 4 semanas previas a la aleatorización. Los participantes que no se hayan recuperado de la toxicidad relacionada con la radioterapia hasta el grado 1 o al inicio no serán elegibles.</w:t>
+      </w:r>
+      <w:r w:rsidR="009942CF">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2660537D" w14:textId="5546386E" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Procedimiento quirúrgico mayor (excluyendo la colocación de acceso vascular) o lesión traumática significativa dentro de las 4 semanas posteriores a la aleatorización o una necesidad anticipada de cirugía mayor durante el estudio.</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:lastRenderedPageBreak/>
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="586F97AF" w14:textId="4B910B7C" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Cualquier agente en investigación o intervención de estudio de un estudio clínico previo: 28 días o 5 vidas medias (lo que sea más corto).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4C1AF408" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="T1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Otras exclusiones</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4110C07B" w14:textId="4B155152" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Participación en la planificación y/o realización del estudio (se aplica tanto al personal de AstraZeneca como al personal del sitio del estudio).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3AB505E7" w14:textId="67949696" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Decisión del investigador de que el participante no debe participar en el estudio si es poco probable que cumpla con los procedimientos, restricciones y requisitos del estudio.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4DB032E1" w14:textId="0CA1C525" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Inscripción previa o aleatorización en el presente estudio.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7B9CB1E9" w14:textId="5F70E7BF" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Mujeres actualmente embarazadas (confirmadas con prueba de embarazo positiva) o en período de lactancia, o mujeres que planean quedar embarazadas.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="45621F1F" w14:textId="03D8B34C" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes que no sean aptos para recibir al menos uno de los agentes quimioterapéuticos/anticancerígenos aprobados según la información de prescripción y la línea de terapia, o que tengan hipersensibilidad conocida a cualquier componente de AZD0901, no serán elegibles para inscribirse/asignarse aleatoriamente en este estudio. La contraindicación para ramucirumab debe documentarse en el eCRF para los participantes con solo una línea de terapia previa.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6050BC41" w14:textId="7380B971" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Consideraciones sobre el estilo de vida</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1452FB35" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="009942CF">
+      <w:pPr>
+        <w:pStyle w:val="Spaced"/>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Las siguientes restricciones se aplican mientras el participante recibe la intervención del estudio y durante los momentos especificados antes y después:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0192E64C" w14:textId="789970A8" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00535D49">
+      <w:pPr>
+        <w:pStyle w:val="B1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Abstenerse de consumir vino tinto, naranjas de Sevilla, pomelo o jugo de pomelo,</w:t>
+      </w:r>
+      <w:r w:rsidR="00535D49">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">pomelos, frutas cítricas exóticas, híbridos de pomelo o jugos de frutas o quinina (</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">p. ej.</w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">, agua tónica) desde 7 días antes del inicio de la intervención del estudio hasta después de la dosis final.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7B999D24" w14:textId="68B07B2D" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00535D49">
+      <w:pPr>
+        <w:pStyle w:val="B1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes deben seguir los requisitos de anticoncepción descritos en el </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Apéndice G</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="409A9C47" w14:textId="209CBA83" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00535D49">
+      <w:pPr>
+        <w:pStyle w:val="B1"/>
+      </w:pPr>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los participantes no deben donar sangre ni componentes sanguíneos mientras participen en este estudio</w:t>
+      </w:r>
+      <w:r w:rsidR="00535D49">
+        <w:t xml:space="preserve"> y hasta 90 días después de la última dosis de la intervención del estudio.</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="066A1BA0" w14:textId="77777777" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Las restricciones relacionadas con las terapias concomitantes se describen en la Sección </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00892792">
+        <w:rPr>
+          <w:color w:val="0000FF"/>
+        </w:rPr>
+        <w:t xml:space="preserve">6.9</w:t>
+      </w:r>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2FB275B5" w14:textId="485645BF" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="00535D49">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:bookmarkStart w:id="0" w:name="_Screen_Failures"/>
+      <w:bookmarkEnd w:id="0"/>
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Errores de pantalla</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6C5A7D83" w14:textId="40FB82CF" w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidRDefault="00000000" w:rsidP="004473A7">
+      <w:r w:rsidRPr="004473A7">
+        <w:t xml:space="preserve">Los fracasos de selección y los fracasos de preselección se definen como participantes que consienten participar en</w:t>
+      </w:r>
+      <w:r w:rsidR="00671917">
+        <w:t xml:space="preserve"> </w:t>
+      </w:r>
+      <w:r w:rsidR="00121099" w:rsidRPr="00121099">
+        <w:t xml:space="preserve">el estudio clínico y/o consienten la preselección pero no son asignados posteriormente al tratamiento del estudio (es decir, aleatorizados).</w:t>
+      </w:r>
+      <w:proofErr w:type="spellStart"/>
+      <w:r w:rsidR="00121099" w:rsidRPr="00121099">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+      <w:proofErr w:type="spellEnd"/>
+      <w:r w:rsidR="00121099" w:rsidRPr="00121099">
+        <w:t xml:space="preserve"></w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="006F0F8A" w:rsidRPr="004473A7" w:rsidSect="00535D49">
+      <w:headerReference w:type="default" r:id="rId7"/>
+      <w:footerReference w:type="default" r:id="rId8"/>
+      <w:pgSz w:w="12240" w:h="15840" w:code="1"/>
+      <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="432" w:footer="432" w:gutter="0"/>
+      <w:cols w:space="720"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
