@@ -1,214 +1,169 @@
 import xml.etree.ElementTree as ET
-import zipfile
 import json
-import uuid
+import zipfile
 import os
 import shutil
-from datetime import datetime
+import uuid
 
-
-def save_xml_structure_to_file(root, file_path):
-    """Función para guardar la estructura del XML en un archivo."""
-    with open(file_path, 'w', encoding='utf-8') as file:
-        def write_structure(node, level=0):
-            indent = "  " * level
-            file.write(f"{indent}<{node.tag}>\n")
-            for child in node:
-                write_structure(child, level + 1)
-            file.write(f"{indent}</{node.tag}>\n")
-        write_structure(root)
-
-def add_comments_to_docx(docx_path, json_path, output_path):
-    # Crear una copia temporal del archivo DOCX
+def add_comments_to_docx(input_docx, comments_json, output_docx):
+    # Crear un directorio temporal para trabajar con los archivos
     temp_dir = "temp_docx"
     if os.path.exists(temp_dir):
         shutil.rmtree(temp_dir)
     os.mkdir(temp_dir)
-    
-    with zipfile.ZipFile(docx_path, 'r') as zip_ref:
+
+    # Extraer el contenido del archivo .docx
+    with zipfile.ZipFile(input_docx, 'r') as zip_ref:
         zip_ref.extractall(temp_dir)
-    
-    # Cargar los comentarios del archivo JSON
-    with open(json_path, 'r') as json_file:
-        comments_data = json.load(json_file)
-    
-    # Modificar document.xml
+
+    # Cargar los comentarios desde el archivo JSON
+    with open(comments_json, 'r') as f:
+        comments_data = json.load(f)
+
+    # Procesar el archivo document.xml
     document_tree = ET.parse(os.path.join(temp_dir, 'word', 'document.xml'))
     document_root = document_tree.getroot()
 
-    # Imprimir la estructura inicial de document.xml
-    print("Estructura inicial de document.xml:")
-    save_xml_structure_to_file(document_root, "estructura_inicial.xml")
-    
-    # Modificar o crear comments.xml
-    comments_path = os.path.join(temp_dir, 'word', 'comments.xml')
-    if not os.path.exists(comments_path):
-        comments_root = ET.Element('w:comments', {
-            'xmlns:w': "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
-            'xmlns:w14': "http://schemas.microsoft.com/office/word/2010/wordml",
-            'xmlns:w15': "http://schemas.microsoft.com/office/word/2012/wordml",
-            'xmlns:w16se': "http://schemas.microsoft.com/office/word/2015/wordml/symex",
-            'xmlns:wp14': "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
-        })
-    else:
-        comments_tree = ET.parse(comments_path)
-        comments_root = comments_tree.getroot()
-    
-    # Modificar o crear commentsExtended.xml
-    comments_extended_path = os.path.join(temp_dir, 'word', 'commentsExtended.xml')
-    if not os.path.exists(comments_extended_path):
-        comments_extended_root = ET.Element('w15:commentsEx', {'xmlns:w15': "http://schemas.microsoft.com/office/word/2012/wordml"})
-    else:
-        comments_extended_tree = ET.parse(comments_extended_path)
-        comments_extended_root = comments_extended_tree.getroot()
-    
-    # Modificar o crear commentsIds.xml
-    comments_ids_path = os.path.join(temp_dir, 'word', 'commentsIds.xml')
-    if not os.path.exists(comments_ids_path):
-        comments_ids_root = ET.Element('w16cid:commentsIds', {'xmlns:w16cid': "http://schemas.microsoft.com/office/word/2016/wordml/cid"})
-    else:
-        comments_ids_tree = ET.parse(comments_ids_path)
-        comments_ids_root = comments_ids_tree.getroot()
-    
-    # Modificar o crear people.xml
-    people_path = os.path.join(temp_dir, 'word', 'people.xml')
-    if not os.path.exists(people_path):
-        people_root = ET.Element('w:people', {'xmlns:w': "http://schemas.openxmlformats.org/wordprocessingml/2006/main"})
-    else:
-        people_tree = ET.parse(people_path)
-        people_root = people_tree.getroot()
-    
-    def find_text_in_document(root, text):
-        for elem in root.iter():
-            if elem.tag.endswith('}t') and elem.text and text.lower() in elem.text.lower():
-                return elem
-        return None
-    
-    # Añadir comentarios
+    # Crear o actualizar los archivos relacionados con los comentarios
+    comments_tree, comments_root = create_or_update_xml(temp_dir, 'word/comments.xml')
+    comments_extended_tree, comments_extended_root = create_or_update_xml(temp_dir, 'word/commentsExtended.xml')
+    people_tree, people_root = create_or_update_xml(temp_dir, 'word/people.xml')
+
+    # Namespaces necesarios
+    namespaces = {
+        'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+        'w14': 'http://schemas.microsoft.com/office/word/2010/wordml',
+        'w15': 'http://schemas.microsoft.com/office/word/2012/wordml',
+        'wp': 'http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing'
+    }
+
+    for ns, uri in namespaces.items():
+        ET.register_namespace(ns, uri)
+
+    # Procesar cada comentario
     for comment_data in comments_data:
         quote = comment_data['quote']
         comment_text = comment_data['comment']
         author = comment_data['author']
-        
-        # Generar IDs únicos
-        comment_id = str(uuid.uuid4())
-        person_id = str(uuid.uuid4())
-        
-        # Encontrar el texto en el documento
-        text_elem = find_text_in_document(document_root, quote)
-        if text_elem is None:
-            print(f"No se encontró el texto: {quote}")
-            continue
-        
-        # Añadir marcadores de comentario en document.xml
-        parent_map = {c: p for p in document_root.iter() for c in p}
-        parent = parent_map.get(text_elem)
-        if parent is None:
-            print(f"No se pudo encontrar el padre del elemento de texto para: {quote}")
-            continue
-        
-        index = list(parent).index(text_elem)
-        
-        comment_range_start = ET.Element('w:commentRangeStart', {'w:id': comment_id})
-        comment_range_end = ET.Element('w:commentRangeEnd', {'w:id': comment_id})
-        comment_reference = ET.Element('w:commentReference', {'w:id': comment_id})
-        
-        parent.insert(index, comment_range_start)
-        parent.insert(index + 2, comment_range_end)
-        parent.insert(index + 3, comment_reference)
-        
-        # Añadir comentario en comments.xml
-        comment = ET.SubElement(comments_root, 'w:comment', {
-            'w:id': comment_id,
-            'w:author': author,
-            'w:date': datetime.now().isoformat(),
-            'w:initials': author[:2].upper()
-        })
-        para = ET.SubElement(comment, 'w:p')
-        pPr = ET.SubElement(para, 'w:pPr')
-        ET.SubElement(pPr, 'w:pStyle', {'w:val': 'CommentText'})
-        run = ET.SubElement(para, 'w:r')
-        rPr = ET.SubElement(run, 'w:rPr')
-        ET.SubElement(rPr, 'w:rStyle', {'w:val': 'CommentReference'})
-        ET.SubElement(run, 'w:annotationRef')
-        run = ET.SubElement(para, 'w:r')
-        text = ET.SubElement(run, 'w:t')
-        text.text = comment_text
-        
-        # Añadir entrada en commentsExtended.xml
-        comment_extended = ET.SubElement(comments_extended_root, 'w15:commentEx', {'w15:paraId': str(uuid.uuid4()), 'w15:done': "0"})
-        
-        # Añadir entrada en commentsIds.xml
-        comment_id_entry = ET.SubElement(comments_ids_root, 'w16cid:commentId', {'w16cid:id': comment_id})
-        
-        # Añadir autor en people.xml
-        person = ET.SubElement(people_root, 'w:person', {'w:author': author})
-        person_data = ET.SubElement(person, 'w:presenceInfo', {'w:providerId': "None", 'w:userId': person_id})
-    
-    # Imprimir la estructura final de document.xml
-    print("Estructura final de document.xml:")
-    save_xml_structure_to_file(document_root, "estructura_final.xml")
-    
 
-    # Guardar los archivos modificados
+        # Buscar el texto en el documento
+        for paragraph in document_root.findall('.//w:p', namespaces):
+            text_elements = paragraph.findall('.//w:t', namespaces)
+            paragraph_text = ''.join(elem.text for elem in text_elements if elem.text)
+            
+            if quote in paragraph_text:
+                # Generar un ID único para el comentario
+                comment_id = str(uuid.uuid4())[:8]
+
+                # Añadir el marcador de comentario en el documento
+                start_range = ET.SubElement(paragraph, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeStart')
+                start_range.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
+
+                end_range = ET.SubElement(paragraph, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeEnd')
+                end_range.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
+
+                reference = ET.SubElement(paragraph, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
+                comment_reference = ET.SubElement(reference, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentReference')
+                comment_reference.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
+
+                # Añadir el comentario al archivo comments.xml
+                comment = ET.SubElement(comments_root, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}comment')
+                comment.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
+                comment.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author', author)
+                comment.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}date', '2024-11-21T10:00:00Z')
+
+                comment_para = ET.SubElement(comment, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p')
+                comment_run = ET.SubElement(comment_para, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
+                comment_text_elem = ET.SubElement(comment_run, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
+                comment_text_elem.text = comment_text
+
+                # Añadir entrada en commentsExtended.xml
+                comment_extended = ET.SubElement(comments_extended_root, '{http://schemas.microsoft.com/office/word/2012/wordml}commentEx')
+                comment_extended.set('{http://schemas.microsoft.com/office/word/2012/wordml}paraId', str(uuid.uuid4()))
+                comment_extended.set('{http://schemas.microsoft.com/office/word/2012/wordml}done', "0")
+
+                # Añadir autor a people.xml si no existe
+                person_exists = people_root.find(f".//w:person[w:author='{author}']", namespaces)
+                if person_exists is None:
+                    person = ET.SubElement(people_root, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}person')
+                    person_author = ET.SubElement(person, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author')
+                    person_author.text = author
+
+                break  # Salir después de encontrar y procesar la primera ocurrencia
+
+    # Guardar los cambios en los archivos XML
     document_tree.write(os.path.join(temp_dir, 'word', 'document.xml'), encoding='UTF-8', xml_declaration=True)
-    ET.ElementTree(comments_root).write(os.path.join(temp_dir, 'word', 'comments.xml'), encoding='UTF-8', xml_declaration=True)
-    ET.ElementTree(comments_extended_root).write(os.path.join(temp_dir, 'word', 'commentsExtended.xml'), encoding='UTF-8', xml_declaration=True)
-    ET.ElementTree(comments_ids_root).write(os.path.join(temp_dir, 'word', 'commentsIds.xml'), encoding='UTF-8', xml_declaration=True)
-    ET.ElementTree(people_root).write(os.path.join(temp_dir, 'word', 'people.xml'), encoding='UTF-8', xml_declaration=True)
-    
-    # Actualizar [Content_Types].xml
-    content_types_path = os.path.join(temp_dir, '[Content_Types].xml')
-    content_types_tree = ET.parse(content_types_path)
-    content_types_root = content_types_tree.getroot()
-    
-    # Añadir tipos de contenido si no existen
-    types_to_add = [
-        ('comments.xml', 'application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml'),
-        ('commentsExtended.xml', 'application/vnd.openxmlformats-officedocument.wordprocessingml.commentsExtended+xml'),
-        ('commentsIds.xml', 'application/vnd.microsoft.word.comments.ids+xml'),
-        ('people.xml', 'application/vnd.openxmlformats-officedocument.wordprocessingml.people+xml')
-    ]
-    
-    for file_name, content_type in types_to_add:
-        if not any(override.get('PartName') == f'/word/{file_name}' for override in content_types_root.findall('{*}Override')):
-            ET.SubElement(content_types_root, 'Override', {'PartName': f'/word/{file_name}', 'ContentType': content_type})
-    
-    content_types_tree.write(content_types_path, encoding='UTF-8', xml_declaration=True)
-    
+    comments_tree.write(os.path.join(temp_dir, 'word', 'comments.xml'), encoding='UTF-8', xml_declaration=True)
+    comments_extended_tree.write(os.path.join(temp_dir, 'word', 'commentsExtended.xml'), encoding='UTF-8', xml_declaration=True)
+    people_tree.write(os.path.join(temp_dir, 'word', 'people.xml'), encoding='UTF-8', xml_declaration=True)
+
+    # Actualizar [Content_Types].xml para incluir los nuevos archivos
+    update_content_types(temp_dir)
+
     # Actualizar word/_rels/document.xml.rels
-    rels_path = os.path.join(temp_dir, 'word', '_rels', 'document.xml.rels')
-    rels_tree = ET.parse(rels_path)
-    rels_root = rels_tree.getroot()
-    
-    # Añadir relaciones si no existen
-    rels_to_add = [
-        ('comments.xml', 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/comments'),
-        ('commentsExtended.xml', 'http://schemas.microsoft.com/office/2011/relationships/commentsExtended'),
-        ('commentsIds.xml', 'http://schemas.microsoft.com/office/2016/relationships/commentsIds'),
-        ('people.xml', 'http://schemas.microsoft.com/office/2011/relationships/people')
-    ]
-    
-    for file_name, rel_type in rels_to_add:
-        if not any(rel.get('Target') == file_name for rel in rels_root.findall('{*}Relationship')):
-            ET.SubElement(rels_root, 'Relationship', {
-                'Id': f'rId{len(rels_root) + 1}',
-                'Type': rel_type,
-                'Target': file_name
-            })
-    
-    rels_tree.write(rels_path, encoding='UTF-8', xml_declaration=True)
-    
-    # Crear el nuevo archivo DOCX
-    with zipfile.ZipFile(output_path, 'w') as zipf:
-        for root, _, files in os.walk(temp_dir):
-            for file in files:
-                file_path = os.path.join(root, file)
-                arcname = os.path.relpath(file_path, temp_dir)
-                zipf.write(file_path, arcname)
-    
-    # Limpiar archivos temporales
+    update_document_rels(temp_dir)
+
+    # Crear el nuevo archivo .docx
+    shutil.make_archive(output_docx, 'zip', temp_dir)
+    os.rename(output_docx + '.zip', output_docx)
+
+    # Limpiar el directorio temporal
     shutil.rmtree(temp_dir)
 
+def create_or_update_xml(temp_dir, file_path):
+    full_path = os.path.join(temp_dir, file_path)
+    if os.path.exists(full_path):
+        tree = ET.parse(full_path)
+        root = tree.getroot()
+    else:
+        root = ET.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}comments')
+        tree = ET.ElementTree(root)
+    return tree, root
+
+def update_content_types(temp_dir):
+    content_types_path = os.path.join(temp_dir, '[Content_Types].xml')
+    tree = ET.parse(content_types_path)
+    root = tree.getroot()
+
+    # Asegurarse de que los tipos de contenido necesarios estén presentes
+    needed_types = [
+        ('comments.xml', 'application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml'),
+        ('commentsExtended.xml', 'application/vnd.openxmlformats-officedocument.wordprocessingml.commentsExtended+xml'),
+        ('people.xml', 'application/vnd.openxmlformats-officedocument.wordprocessingml.people+xml')
+    ]
+
+    for file_name, content_type in needed_types:
+        if not root.find(f".//*[@PartName='/word/{file_name}']"):
+            override = ET.SubElement(root, 'Override')
+            override.set('PartName', f'/word/{file_name}')
+            override.set('ContentType', content_type)
+
+    tree.write(content_types_path, encoding='UTF-8', xml_declaration=True)
+
+def update_document_rels(temp_dir):
+    rels_path = os.path.join(temp_dir, 'word', '_rels', 'document.xml.rels')
+    tree = ET.parse(rels_path)
+    root = tree.getroot()
+
+    # Asegurarse de que las relaciones necesarias estén presentes
+    needed_rels = [
+        ('comments.xml', 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/comments'),
+        ('commentsExtended.xml', 'http://schemas.microsoft.com/office/2011/relationships/commentsExtended'),
+        ('people.xml', 'http://schemas.microsoft.com/office/2011/relationships/people')
+    ]
+
+    for target, type_value in needed_rels:
+        if not root.find(f".//*[@Target='{target}']"):
+            relationship = ET.SubElement(root, 'Relationship')
+            relationship.set('Type', type_value)
+            relationship.set('Target', target)
+            relationship.set('Id', f'rId{len(root) + 1}')
+
+    tree.write(rels_path, encoding='UTF-8', xml_declaration=True)
+
 # Uso de la función
-add_comments_to_docx('EP3567950-B1__seprotec_es.docx', 'errors.json', 'EP3567950-B1__seprotec_es_suggestions.docx')
+input_docx = 'EP3567950-B1__seprotec_es.docx'
+comments_json = 'errors.json'
+output_docx = 'EP3567950-B1__seprotec_es_suggestions.docx'
+
+add_comments_to_docx(input_docx, comments_json, output_docx)

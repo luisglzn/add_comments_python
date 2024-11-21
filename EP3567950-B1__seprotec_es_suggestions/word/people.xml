@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<w:people xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:person w:author="Major (Seprotec AI)"><w:presenceInfo w:providerId="None" w:userId="0fe612a6-7224-45db-b997-2286c76db53c" /></w:person></w:people>
+<w:comments xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:person><w:author>Major (Seprotec AI)</w:author></w:person></w:comments>
