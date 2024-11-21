@@ -4,6 +4,7 @@ import zipfile
 import os
 import shutil
 import uuid
+from datetime import datetime
 
 def add_comments_to_docx(input_docx, comments_json, output_docx):
     temp_dir = "temp_docx"
@@ -20,9 +21,9 @@ def add_comments_to_docx(input_docx, comments_json, output_docx):
     document_tree = ET.parse(os.path.join(temp_dir, 'word', 'document.xml'))
     document_root = document_tree.getroot()
 
-    comments_tree, comments_root = create_or_update_xml(temp_dir, 'word/comments.xml')
-    comments_extended_tree, comments_extended_root = create_or_update_xml(temp_dir, 'word/commentsExtended.xml')
-    people_tree, people_root = create_or_update_xml(temp_dir, 'word/people.xml')
+    comments_tree, comments_root = create_or_update_xml(temp_dir, 'word/comments.xml', 'comments')
+    comments_extended_tree, comments_extended_root = create_or_update_xml(temp_dir, 'word/commentsExtended.xml', 'commentsExtended')
+    people_tree, people_root = create_or_update_xml(temp_dir, 'word/people.xml', 'people')
 
     namespaces = {
         'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
@@ -34,6 +35,7 @@ def add_comments_to_docx(input_docx, comments_json, output_docx):
     for ns, uri in namespaces.items():
         ET.register_namespace(ns, uri)
 
+    comment_id = 0
     for comment_data in comments_data:
         quote = comment_data['quote']
         comment_text = comment_data['comment']
@@ -44,59 +46,11 @@ def add_comments_to_docx(input_docx, comments_json, output_docx):
             paragraph_text = ''.join(elem.text for elem in text_elements if elem.text)
             
             if quote in paragraph_text:
-                comment_id = str(uuid.uuid4())[:8]
-
-                # Crear elementos w:r para los marcadores de comentario
-                start_r = ET.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
-                start_range = ET.SubElement(start_r, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeStart')
-                start_range.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
-
-                end_r = ET.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
-                end_range = ET.SubElement(end_r, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentRangeEnd')
-                end_range.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
-
-                ref_r = ET.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
-                comment_reference = ET.SubElement(ref_r, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentReference')
-                comment_reference.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
-
-                # Insertar los elementos en la posición correcta
-                insert_index = len(paragraph)
-                paragraph.insert(insert_index, start_r)
-                paragraph.insert(insert_index + 1, end_r)
-                paragraph.insert(insert_index + 2, ref_r)
-
-                # Añadir el comentario al archivo comments.xml
-                comment = ET.SubElement(comments_root, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}comment')
-                comment.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
-                comment.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author', author)
-                comment.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}date', '2024-11-21T10:00:00Z')
-
-                comment_para = ET.SubElement(comment, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p')
-                
-                # Añadir w:pPr
-                pPr = ET.SubElement(comment_para, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr')
-                
-                comment_run = ET.SubElement(comment_para, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r')
-                
-                # Añadir w:rPr
-                rPr = ET.SubElement(comment_run, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr')
-                
-                comment_text_elem = ET.SubElement(comment_run, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t')
-                comment_text_elem.text = comment_text
-
-                # Añadir entrada en commentsExtended.xml
-                comment_extended = ET.SubElement(comments_extended_root, '{http://schemas.microsoft.com/office/word/2012/wordml}commentEx')
-                comment_extended.set('{http://schemas.microsoft.com/office/word/2012/wordml}paraId', str(uuid.uuid4()))
-                comment_extended.set('{http://schemas.microsoft.com/office/word/2012/wordml}done', "0")
-                comment_extended.set('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id', comment_id)
-
-                # Añadir autor a people.xml si no existe
-                person_exists = people_root.find(f".//w:person[w:author='{author}']", namespaces)
-                if person_exists is None:
-                    person = ET.SubElement(people_root, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}person')
-                    person_author = ET.SubElement(person, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}author')
-                    person_author.text = author
-
+                comment_id += 1
+                add_comment_to_paragraph(paragraph, comment_id, quote, comment_text, author, namespaces)
+                add_comment_to_comments_xml(comments_root, comment_id, comment_text, author, namespaces)
+                add_comment_to_comments_extended(comments_extended_root, comment_id, namespaces)
+                add_person_to_people_xml(people_root, author, namespaces)
                 break
 
     document_tree.write(os.path.join(temp_dir, 'word', 'document.xml'), encoding='UTF-8', xml_declaration=True)
@@ -113,15 +67,68 @@ def add_comments_to_docx(input_docx, comments_json, output_docx):
 
     shutil.rmtree(temp_dir)
 
-def create_or_update_xml(temp_dir, file_path):
+def create_or_update_xml(temp_dir, file_path, root_element):
     full_path = os.path.join(temp_dir, file_path)
     if os.path.exists(full_path):
         tree = ET.parse(full_path)
         root = tree.getroot()
     else:
-        root = ET.Element('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}comments')
+        root = ET.Element(f'{{http://schemas.openxmlformats.org/wordprocessingml/2006/main}}{root_element}')
         tree = ET.ElementTree(root)
     return tree, root
+
+def add_comment_to_paragraph(paragraph, comment_id, quote, comment_text, author, namespaces):
+    w_ns = namespaces['w']
+    
+    # Encontrar la posición del texto citado
+    start_index = 0
+    for run in paragraph.findall(f'.//{{{w_ns}}}r'):
+        text_elem = run.find(f'{{{w_ns}}}t')
+        if text_elem is not None and text_elem.text:
+            if quote in text_elem.text:
+                break
+            start_index += len(text_elem.text)
+
+    # Insertar commentRangeStart
+    comment_range_start = ET.Element(f'{{{w_ns}}}commentRangeStart')
+    comment_range_start.set(f'{{{w_ns}}}id', str(comment_id))
+    paragraph.insert(start_index, comment_range_start)
+
+    # Insertar commentRangeEnd
+    comment_range_end = ET.Element(f'{{{w_ns}}}commentRangeEnd')
+    comment_range_end.set(f'{{{w_ns}}}id', str(comment_id))
+    paragraph.insert(start_index + 2, comment_range_end)
+
+    # Insertar commentReference
+    comment_reference = ET.Element(f'{{{w_ns}}}r')
+    comment_reference_elem = ET.SubElement(comment_reference, f'{{{w_ns}}}commentReference')
+    comment_reference_elem.set(f'{{{w_ns}}}id', str(comment_id))
+    paragraph.insert(start_index + 3, comment_reference)
+
+def add_comment_to_comments_xml(comments_root, comment_id, comment_text, author, namespaces):
+    w_ns = namespaces['w']
+    comment = ET.SubElement(comments_root, f'{{{w_ns}}}comment')
+    comment.set(f'{{{w_ns}}}id', str(comment_id))
+    comment.set(f'{{{w_ns}}}author', author)
+    comment.set(f'{{{w_ns}}}date', datetime.now().isoformat())
+
+    para = ET.SubElement(comment, f'{{{w_ns}}}p')
+    run = ET.SubElement(para, f'{{{w_ns}}}r')
+    text = ET.SubElement(run, f'{{{w_ns}}}t')
+    text.text = comment_text
+
+def add_comment_to_comments_extended(comments_extended_root, comment_id, namespaces):
+    w15_ns = namespaces['w15']
+    comment_ex = ET.SubElement(comments_extended_root, f'{{{w15_ns}}}commentEx')
+    comment_ex.set(f'{{{w15_ns}}}paraId', str(uuid.uuid4()))
+    comment_ex.set(f'{{{w15_ns}}}paraIdParent', "00000000")
+    comment_ex.set(f'{{{w15_ns}}}done', "0")
+
+def add_person_to_people_xml(people_root, author, namespaces):
+    w_ns = namespaces['w']
+    person = ET.SubElement(people_root, f'{{{w_ns}}}person')
+    person_author = ET.SubElement(person, f'{{{w_ns}}}author')
+    person_author.text = author
 
 def update_content_types(temp_dir):
     content_types_path = os.path.join(temp_dir, '[Content_Types].xml')
@@ -168,12 +175,11 @@ def update_settings(temp_dir):
         tree = ET.parse(settings_path)
         root = tree.getroot()
         
-        # Añadir configuración de comentarios si no existe
-        if not root.find('.//w:commentsEx', namespaces={'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}):
-            comments_ex = ET.SubElement(root, '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}commentsEx')
+        w_ns = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
+        if not root.find(f'.//{w_ns}commentsEx'):
+            comments_ex = ET.SubElement(root, f'{w_ns}commentsEx')
         
         tree.write(settings_path, encoding='UTF-8', xml_declaration=True)
-
 # Uso de la función
 input_docx = 'EP3567950-B1__seprotec_es.docx'
 comments_json = 'errors.json'
