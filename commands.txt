@@ -1,0 +1,3 @@
+C:\Users\luisg\OneDrive\Escritorio\Trabajo\Add comments\add_comments_python>"C:\Program Files\LibreOffice\program\python.exe" script-v2.py
+
+C:\Program Files\LibreOffice\program\soffice.exe" --headless --accept="socket,host=localhost,port=2002;urp;
